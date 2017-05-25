@@ -4,16 +4,9 @@
 
 function nonUniq(arr) {
     return arr.reduce(function (prev, curr, index) {
-        let flag = true;
          if (stringCase(arr, curr, index)) {
             prev.push(curr);
-            flag = false;
-        }
-        if (stringCase(prev, curr)) {
-            if(flag) {
-                prev.push(curr);
-            }
-        }
+         }
         return prev;
     }, []);
 }
