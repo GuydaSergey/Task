@@ -5,21 +5,14 @@
 function nonUniq(arr) {
     return arr.reduce(function (prev, curr, index) {
         let flag = true;
-        if (arr.indexOf(curr, index + 1) !== -1) {
+         if (stringCase(arr, curr, index)) {
             prev.push(curr);
             flag = false;
         }
-        else if (stringCase(arr, curr, index)) {
-            prev.push(curr);
-            flag = false;
-        }
-        if (prev.indexOf(curr) !== -1) {
-            if (flag) {
+        if (stringCase(prev, curr)) {
+            if(flag) {
                 prev.push(curr);
             }
-        }
-        else if (stringCase(prev, curr)) {
-            prev.push(curr);
         }
         return prev;
     }, []);
@@ -40,6 +33,9 @@ function stringCase(arr, value, index) {
                         break;
                     }
                     i++;
+                }
+                if(value==row){
+                    flag = true;
                 }
             }
         });
