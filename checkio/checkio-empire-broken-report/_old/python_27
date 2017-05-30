@@ -1,0 +1,2 @@
+def golf(broken_report):
+    return 1

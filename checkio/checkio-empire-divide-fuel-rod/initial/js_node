@@ -1,0 +1,17 @@
+"use strict";
+
+function disjoint(number) {
+    return [number / 2, number - number / 2]
+}
+
+var assert = require("assert");
+
+if (!global.is_checking) {
+    // These "asserts" using only for self-checking and not necessary for auto-testing
+    assert.deepEqual(disjoint(64), [15, 21, 28], "1st example");
+    assert.deepEqual(disjoint(371), [36, 45, 55, 66, 78, 91], "2nd example");
+    assert.deepEqual(disjoint(225), [105, 120], "3rd example");
+    assert.deepEqual(disjoint(882), [], "4th example");
+    console.log("Earn cool rewards by using the 'Check' button!");
+}
+

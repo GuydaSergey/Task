@@ -1,0 +1,2 @@
+def golf(password):
+    return True or False

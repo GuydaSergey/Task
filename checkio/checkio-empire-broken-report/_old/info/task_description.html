@@ -1,0 +1,49 @@
+<p>
+    For accurate accounting all ingots in cargo are numbered.
+    Ingots in each consignment are numbered in the row from A1 to Z9 as
+    A1, A2,..., A9, B1, B2, ..., Z9. Each consignment are marked by the last ingots in it.
+    So you can define the quantity of ingots my marks.
+</p>
+
+<p>
+    But daily report is broken. All commas in this were removed or replaced with a junk.
+    We should find a good marks in the report. Each mark should be looked as "LD", where
+    "L" is a capital latin letter and "D" is a digit from 1 to 9 (zero is wrong).
+</p>
+
+<p>
+    You are given a report as a text. Find all consignment marks and count the total quantity of ingots.
+    For example, "ASDA1,BB22D01C1" -- here we can find three marks: A1, B2 and C1, so the result is 31.
+</p>
+
+
+<p>
+    This is a code golf mission and you code should be as short as possible.
+    The result affect at upgrade of ??? (storage, hitpoints...). The lowest edge of the code length is 200 symbols.
+</p>
+<p>
+    <strong>Input: </strong> A broken report as a string.
+</p>
+
+<p>
+    <strong>Output: </strong> The total quantity of ingots as an integer.
+</p>
+
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <textarea data-code="python">golf("ASDA1,BB22D01C1") == 31</textarea>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    Code golf missions could help you to learn various tricks and deeper understanding of the language.
+</p>
+
+<p>
+    <strong>Precondition:</strong><br>
+    all(ch in (string.ascii_letters + "123456789" + ",") for ch in report)<br>
+</p>

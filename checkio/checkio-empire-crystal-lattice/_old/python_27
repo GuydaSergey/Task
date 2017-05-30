@@ -1,0 +1,2 @@
+def golf(cube):
+    return True or False

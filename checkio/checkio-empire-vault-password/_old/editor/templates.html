@@ -1,0 +1,49 @@
+<script type="text/template" id="template_animation">
+    <div class="animation-content center-exp">
+        <div class="output"></div>
+        <div class="explanation">
+            <div class="password-word"></div>
+            <div class="password-length"></div>
+            <div class="password-include">
+                <table class="center-exp">
+                    <tr>
+                        <td>[a-z]:</td>
+                        <td><span class="lower-include"></span></td>
+                        <td>[A-Z]:</td>
+                        <td><span class="upper-include"></span></td>
+                        <td>[0-9]:</td>
+                        <td><span class="digital-include"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="answer"></div>
+        <div class="call"></div>
+        <div style="clear:both"></div>
+    </div>
+</script>
+
+<script type="text/template" id="template_tryit">
+    <div class="tryit-content center-exp">
+        <table class="tool">
+            <tr>
+                <td>
+                    <label class="password_label">Password:</label>
+                    <input type="text" size="15" class="password_input"/>
+                    <button type="button" class="bn-check btn">Check</button>
+                </td>
+            </tr>
+            <!--<tr>-->
+                <!--<td class="tryit-feedback">-->
+                    <!--length:&nbsp;<span class="length"></span>&nbsp;-->
+                    <!--[a-z]:&nbsp;<span class="lower-include vote"></span>&nbsp;-->
+                    <!--[A-Z]:&nbsp;<span class="upper-include vote"></span>&nbsp;-->
+                    <!--[0-9]:&nbsp;<span class="digital-include vote"></span>&nbsp;-->
+                <!--</td>-->
+            <!--</tr>-->
+            <tr>
+                <td class="checkio_result"></td>
+            </tr>
+        </table>
+    </div>
+</script>

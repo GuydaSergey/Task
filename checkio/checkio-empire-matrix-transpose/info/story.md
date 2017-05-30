@@ -1,0 +1,1 @@
+Sometimes it's useful to look at world from another perspective.

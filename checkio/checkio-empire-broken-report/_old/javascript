@@ -1,0 +1,3 @@
+function golf(broken_report) {
+    return 1;
+}

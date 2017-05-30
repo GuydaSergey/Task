@@ -1,0 +1,59 @@
+<div class="story">
+    <p>
+        In a great number of the cosmogonic myths the world is said to have developed from a great water, which was the
+        prime matter. In many cases, as for instance in an Indian myth, this prime matter is indicated as a solution,
+        out of which the solid earth crystallized out.
+    </p>
+
+    <p>
+        -- Svante Arrhenius
+    </p>
+
+</div>
+<p>
+    With linear and slice scans complete, we are now ready to check the crystals with a 3D scanner. For this, we'll
+    start with a cubic sample of the crystal and check the adjacent atoms, much like in the previous scans. This crystal
+    type contains two atoms composing the elements "X" (Xenatom) and "Z" (Zorium). In a well grown crystal, these atoms
+    should alternate down each of the three axis.
+</p>
+
+<p>
+    You are given a sample crystal as a 3D array of atoms. Well formed crystals will have atoms alternating along the X,
+    Y and Z axis (height, width, depth). If any atoms are found next to the same type of atom, then this crystal is
+    unusable.
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="cube" src="{{MEDIA}}cube.svg" alt="cube"/>
+    <img class="for_editor_only" title="cube" src="{{MEDIA}}cube.svg" alt="cube" width="380px"/>
+</p>
+
+<p>
+    <strong>Input: </strong> Atom cube as a list of lists of list of strings.
+</p>
+
+<p>
+    <strong>Output: </strong> Is a crystal good or not as a boolean.
+</p>
+
+
+<div class="for_info_only">
+
+    <p>
+        <strong>Example:</strong>
+    </p>
+    <textarea data-code="python"></textarea>
+</div>
+
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    This mission can show you work with more deep structures, which can not be easily drawn in notebook.
+
+</p>
+
+<p>
+    <strong>Precondition:</strong><br>
+    1 &lt; len(cube) &le; 5<br>
+    len(cube) == len(cube[0]) == len(cube[0][0])<br>
+    all(all(all(ch in "XZ" for ch in row) for row in grid) for grid in cube)
+</p>

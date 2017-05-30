@@ -1,0 +1,1 @@
+Storing word data as numbers
