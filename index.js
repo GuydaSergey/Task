@@ -8,7 +8,8 @@ const completedTasks = [
     {fn: require('./MatrixTranspose'), name: 'checkio-empire-matrix-transpose'},
     {fn: require('./NonUniqueElements'), name: 'checkio-empire-non-unique-elements'},
     {fn: require('./RecallPassword'), name: 'checkio-empire-cipher-map'},
-    {fn: require('./StructPattern'), name: 'checkio-empire-structure-pattern'}
+    {fn: require('./StructPattern'), name: 'checkio-empire-structure-pattern'},
+    {fn: require('./NonUniqueElements/nonUnique').extremeNonUnique, name: 'checkio-empire-non-unique-elements'}
 ];
 if (process.argv[2] === 'test') {
     process.stdin.resume();

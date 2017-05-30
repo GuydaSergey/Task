@@ -35,4 +35,9 @@ function stringCase(arr, value, index) {
         });
     return flag;
 }
+function extremeNonUnique () {
+    const src = [...arguments];
+    return src.map((v) => typeof(v) === 'string' ? v.toLowerCase() : v).reduce((dst, v, i, a) => a.indexOf(v) !== a.lastIndexOf(v) ? [...dst, src[i]] : dst, [])
+}
 exports.nonUnique = nonUnique;
+exports.extremeNonUnique = extremeNonUnique;
