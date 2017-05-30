@@ -56,7 +56,7 @@ class CheckioTask {
         return CheckioTask.getTest(taskName).then((fixt) => {
             return Object.keys(fixt).reduce((result, rank) => {
                 result[rank] = fixt[rank].map((test) => {
-                    let probe = targetFn(test.input);
+                    let probe = targetFn(...test.input);
                     return [
                         (CheckioTask.assertResult(probe, test.answer) ? 'SUCCESS' : 'FAILURE'),
                         JSON.stringify({'Correct': test.answer}),

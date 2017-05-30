@@ -2,7 +2,8 @@
  * Created by Сергей on 22.05.2017.
  */
 
-function transpose(mas) {
+function transpose() {
+    const mas = [...arguments];
     return mas.reduce(function (prev,curr,index) {
         if(index===0) {
             prev=(curr.map(function (value) {

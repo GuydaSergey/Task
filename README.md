@@ -10,8 +10,8 @@ install all deps from NPM
 
 #### Usage
 
-To check task result run application with task number as argument
+To check task result run application with 'test' string as argument
 
 ```
-> node index.js 2
+> node index.js test
 ```

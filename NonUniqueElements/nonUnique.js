@@ -2,7 +2,8 @@
  * Created by Сергей on 24.05.2017.
  */
 
-function nonUnique(arr) {
+function nonUnique() {
+    const arr = [...arguments];
     return arr.reduce(function (prev, curr, index) {
          if (stringCase(arr, curr, index)) {
             prev.push(curr);

@@ -10,7 +10,7 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": (42, '12a0b3e4'),
+            "input": [42, '12a0b3e4'],
             "answer": True,
             "explanation": [
                 "      42",
@@ -21,7 +21,7 @@ TESTS = {
         },
 
         {
-            "input": (101, 'ab23b4zz'),
+            "input": [101, 'ab23b4zz'],
             "answer": False,
             "explanation": [
                 "     101",
@@ -31,7 +31,7 @@ TESTS = {
                 "XVXVXXXV"]
         },
         {
-            "input": (0, '478103487120470129'),
+            "input": [0, '478103487120470129'],
             "answer": True,
             "explanation": [
                 "                 0",
@@ -40,7 +40,7 @@ TESTS = {
                 "DDDDDDDDDDDDDDDDDD",
                 "VVVVVVVVVVVVVVVVVV"]},
         {
-            "input": (127, 'Checkio'),
+            "input": [127, 'Checkio'],
             "answer": True,
             "explanation": [
                 "    127",
@@ -49,7 +49,7 @@ TESTS = {
                 "LLLLLLL",
                 "VVVVVVV"]},
         {
-            "input": (8, 'a'),
+            "input": [8, 'a'],
             "answer": False,
             "explanation": [
                 "   8",
@@ -59,7 +59,7 @@ TESTS = {
                 "XXXX"]},
 
         {
-            "input": (7, 'Hello'),
+            "input": [7, 'Hello'],
             "answer": False,
             "explanation": [
                 "    7",
@@ -69,7 +69,7 @@ TESTS = {
                 "XXVVV"]},
 
         {
-            "input": (5, 'H2O'),
+            "input": [5, 'H2O'],
             "answer": True,
             "explanation": [
                 "  5",
@@ -79,7 +79,7 @@ TESTS = {
                 "VVV"]},
 
         {
-            "input": (42, 'C2H5OH'),
+            "input": [42, 'C2H5OH'],
             "answer": False,
             "explanation": [
                 "    42",
@@ -91,7 +91,7 @@ TESTS = {
     ],
     "Edge": [
         {
-            "input": (0, '0'),
+            "input": [0, '0'],
             "answer": True,
             "explanation": [
                 "0",
@@ -100,7 +100,7 @@ TESTS = {
                 "D",
                 "V"]},
         {
-            "input": (3, 'a'),
+            "input": [3, 'a'],
             "answer": False,
             "explanation": [
                 " 3",
@@ -111,7 +111,7 @@ TESTS = {
 
 
         {
-            "input": (0, '012345678901234567890'),
+            "input": [0, '012345678901234567890'],
             "answer": True,
             "explanation": [
                 "                    0",
@@ -121,7 +121,7 @@ TESTS = {
                 "VVVVVVVVVVVVVVVVVVVVV"]},
 
         {
-            "input": (1, 'A'),
+            "input": [1, 'A'],
             "answer": True,
             "explanation": [
                 "1",
@@ -131,7 +131,7 @@ TESTS = {
                 "V"]},
 
         {
-            "input": (1, '1'),
+            "input": [1, '1'],
             "answer": False,
             "explanation": [
                 "1",
@@ -141,7 +141,7 @@ TESTS = {
                 "X"]},
 
         {
-            "input": (1, 'z'),
+            "input": [1, 'z'],
             "answer": True,
             "explanation": [
                 "1",
@@ -151,7 +151,7 @@ TESTS = {
                 "V"]},
 
         {
-            "input": (2147483647, 'LoremIpsumDoLorsiTametConsectet'),
+            "input": [2147483647, 'LoremIpsumDoLorsiTametConsectet'],
             "answer": True,
             "explanation": [
                 "                     2147483647",
@@ -160,7 +160,7 @@ TESTS = {
                 "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
         {
-            "input": (31, 'LoremIpsumDoLorsiTametConsectet'),
+            "input": [31, 'LoremIpsumDoLorsiTametConsectet'],
             "answer": False,
             "explanation": [
                 "    127",
@@ -169,7 +169,7 @@ TESTS = {
                 "XLLLLLL",
                 "XVVVVVV"]},
         {
-            "input": (1, 'LoremIpsumDoLorsiTametConsectet'),
+            "input": [1, 'LoremIpsumDoLorsiTametConsectet'],
             "answer": False,
             "explanation": [
                 "                              1",
@@ -179,7 +179,7 @@ TESTS = {
                 "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXV"]},
 
         {
-            "input": (2147483647, 'Loremipsumdolorsitametconsecte9'),
+            "input": [2147483647, 'Loremipsumdolorsitametconsecte9'],
             "answer": False,
             "explanation": [
                 "                     2147483647",
@@ -193,7 +193,7 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": (682, 'a9z1b2c4d6'),
+            "input": [682, 'a9z1b2c4d6'],
             "answer": True,
             "explanation": [
                 "       682",
@@ -202,7 +202,7 @@ TESTS = {
                 "LDLDLDLDLD",
                 "VVVVVVVVVV"]},
         {
-            "input": (2730, '9z1b2c4d6a7Z'),
+            "input": [2730, '9z1b2c4d6a7Z'],
             "answer": False,
             "explanation": [
                 "        2730",
@@ -211,7 +211,7 @@ TESTS = {
                 "DLDLDLDLDLDL",
                 "XXXXXXXXXXXX"]},
         {
-            "input": (1024, 'I0000000000'),
+            "input": [1024, 'I0000000000'],
             "answer": True,
             "explanation": [
                 "       1024",
@@ -220,7 +220,7 @@ TESTS = {
                 "LDDDDDDDDDD",
                 "VVVVVVVVVVV"]},
         {
-            "input": (67108865, 'a2345678901234567890123456z'),
+            "input": [67108865, 'a2345678901234567890123456z'],
             "answer": True,
             "explanation": [
                 "                   67108865",
@@ -230,7 +230,7 @@ TESTS = {
                 "VVVVVVVVVVVVVVVVVVVVVVVVVVV"]},
 
         {
-            "input": (1000, 'OneThousand'),
+            "input": [1000, 'OneThousand'],
             "answer": False,
             "explanation": [
                 "       1000",
@@ -239,7 +239,7 @@ TESTS = {
                 "LLLLLLLLLLL",
                 "XVVVVVXVXXX"]},
         {
-            "input": (4096, 'C3PO'),
+            "input": [4096, 'C3PO'],
             "answer": False,
             "explanation": [
                 "         4096",
