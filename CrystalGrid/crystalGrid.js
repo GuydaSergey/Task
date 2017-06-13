@@ -3,7 +3,7 @@
  */
 
 function checkGrid() {
-    const arr = [...arguments]
+    const arr = [...arguments];
     let res = [];
     arr.reduce((pr, cr) => {
         Array.isArray(pr[0]) ? res.push([checkGrid(pr)]) :
