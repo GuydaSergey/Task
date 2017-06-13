@@ -2,7 +2,7 @@
  * Created by Сергей on 11.05.2017.
  */
 
-function structPattern(value,str,rank) {
+function structPattern(value, str, rank = 2) {
 
     var i = parseInt(value,10).toString(rank);
     if(i.length>str.length)
@@ -13,7 +13,7 @@ function structPattern(value,str,rank) {
     {
         arr.unshift('0');
     }
-    return provPettern(arr,arrStr);
+    return provPettern(arr, arrStr, rank);
 }
 
  function createArr(str) {
@@ -26,7 +26,7 @@ function structPattern(value,str,rank) {
      return mas;
  }
 
-function provPettern(arr,arrStr) {
+function provPettern(arr, arrStr, rank) {
 
     var flags;
     for(var i =0; i<arr.length;i++) {
@@ -34,6 +34,9 @@ function provPettern(arr,arrStr) {
         if (arr[i] == 0 && !isNaN(parseInt(arrStr[i],10))) {
              flags = true;
          }
+        else if (arr[i] == 1 && isNaN(parseInt(arrStr[i], 10)) && rank < 3) {
+            flags = true;
+        }
          else if (arr[i] == 1 && isNaN(parseInt(arrStr[i],10))  && arrStr[i].toUpperCase()!=arrStr[i]) {
              flags = true;
          }

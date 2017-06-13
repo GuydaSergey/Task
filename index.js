@@ -6,10 +6,10 @@ const CheckioTask = require('./checkio/checkio');
 const completedTasks = [
     {fn: require('./ListCombination'), name: 'checkio-empire-list-combination'},
     {fn: require('./MatrixTranspose'), name: 'checkio-empire-matrix-transpose'},
-    {fn: require('./NonUniqueElements'), name: 'checkio-empire-non-unique-elements'},
     {fn: require('./RecallPassword'), name: 'checkio-empire-cipher-map'},
     {fn: require('./StructPattern'), name: 'checkio-empire-structure-pattern'},
-    {fn: require('./NonUniqueElements/nonUnique').extremeNonUnique, name: 'checkio-empire-non-unique-elements'}
+    {fn: require('./NonUniqueElements/nonUnique').nonUnique, name: 'checkio-empire-non-unique-elements'},
+    {fn: require('./CrystalGrid'), name: 'checkio-empire-crystal-grid'}  
 ];
 if (process.argv[2] === 'test') {
     process.stdin.resume();

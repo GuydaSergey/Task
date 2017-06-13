@@ -14,23 +14,29 @@ function nonUnique() {
 
 function stringCase(arr, value, index) {
     let flag = false;
-        arr.forEach(function (row, id) {
+    arr.forEach(function (row, id) {
             if (row.length == value.length && id !== index) {
                 let i = 0;
+                if (value == row) {
+                    flag = true;
+                }
+                let flag2 = false;
                 while (i < row.length) {
                     if (value.charAt(i).toUpperCase() == row.charAt(i).toUpperCase()) {
-                        flag = true;
+                        flag2 = true;
                     } else if (value.charAt(i).toLowerCase() == row.charAt(i).toLowerCase()) {
-                        flag = true;
-                    } else {
-                        flag = false;
+                        flag2 = true;
+                    }
+                    else {
+                        flag2 = false;
                         break;
                     }
                     i++;
                 }
-                if(value==row){
-                    flag = true;
+                if (flag2) {
+                    flag = flag2
                 }
+                ;
             }
         });
     return flag;

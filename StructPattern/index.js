@@ -5,14 +5,14 @@
 const struct = require("./structPatt");
 module.exports = struct.structPattern;
 
-// let prov= struct.structPattern(42,"12",2);
+// let prov= struct.structPattern(5,"H2O",2);
 // console.log(prov);
 // prov= struct.structPattern(42,"12a0b3e4",2);
 // console.log(prov);
 // prov= struct.structPattern(101,"ab23b4zz",2);
 // console.log(prov);
-// prov= struct.structPattern(42,"asD0",3);
-// console.log(prov);
+//  prov= struct.structPattern(1823,"CheckiO",3);
+//  console.log(prov);
 // prov= struct.structPattern(101,"a3F5R",3);
 // console.log(prov);
 // prov= struct.structPattern(423,"aSDe ",4);
