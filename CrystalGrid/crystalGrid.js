@@ -10,7 +10,6 @@ function checkGrid() {
             pr.forEach((val, idx) => {
                 res.push([val !== pr[idx + 1] && val !== cr[idx]])
             });
-        res.unshift(pr[0]);
         return pr = cr;
     });
     return res.every((val) => {
