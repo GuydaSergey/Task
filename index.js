@@ -9,7 +9,8 @@ const completedTasks = [
     {fn: require('./RecallPassword'), name: 'checkio-empire-cipher-map'},
     {fn: require('./StructPattern'), name: 'checkio-empire-structure-pattern'},
     {fn: require('./NonUniqueElements/nonUnique').nonUnique, name: 'checkio-empire-non-unique-elements'},
-    {fn: require('./CrystalGrid'), name: 'checkio-empire-crystal-grid'}  
+    {fn: require('./CrystalGrid'), name: 'checkio-empire-crystal-grid'},
+    {fn: require('./WeakPoint'), name: 'checkio-empire-weak-point'}
 ];
 if (process.argv[2] === 'test') {
     process.stdin.resume();
